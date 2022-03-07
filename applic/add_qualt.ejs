@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./include/header.ejs') %>
+   
+
+
+    <body>
+        <h1>Qualifie</h1>
+        <form class="col-4 m-5 p-5" action="/add_corus" method="post"  enctype="multipart/form-data">
+            <div >
+                <div>
+                    <label> Name:</label><input type="text" name="qname" ><br>
+                    <label >Department:</label><input type="text" name="qdep" ><br>
+                    <label>Avreg</label><input type="number" name="qavg" ><br>
+                    <label> Date:</label><input type="date" name="qdate" ><br>
+                    <label >Appreciaion</label><input type="text" name="qapp" ><br>
+                    <label> place:</label><input type="text" name="qplace" ><br>
+                    <label> image:</label><input type="file" name="qimge" multipart><br>
+                </div>
+            </div>
+            <input  type="submit" value="save">
+        </form>
+    <%- include('./include/footer.ejs') %>
+        
+    </body>
+</html>

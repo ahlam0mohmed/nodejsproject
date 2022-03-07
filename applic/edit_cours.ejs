@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./include/header.ejs') %>
+<body>
+    <form action="/edit-co" method="put"  enctype="multipart/form-data">
+        <div class="col-4">
+            <h1>Courses</h1>
+            <div>
+                <label>Name:</label><input type="text" name="cname" value=""><br>
+                <label>Date:</label><input type="date" name="cdate" ><br>
+                <label>Place:</label><input type="text" name="cplace" ><br>
+                <label>Image</label><input type="file" name="cimge" multipart><br>
+            </div>
+        </div>
+    </form>
+    
+
+
+    <%- include('./include/footer.ejs') %>
+</body>
+</html>

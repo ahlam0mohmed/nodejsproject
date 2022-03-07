@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./include/header.ejs') %>
+   
+
+
+    <body>
+        <h1>soical</h1>
+        <form action="/add_per" method="post"  enctype="multipart/form-data">
+            <div class="row ">
+                <div>
+                    <h5>Name:</h5><input type="text" name="soname" ><br>
+                    <h5>Acount:</h5><input type="text" name="acout" ><br>
+                </div>
+            </div>
+            <input class="m-5" type="submit" value="save">
+        </form>
+    <%- include('./include/footer.ejs') %>
+
+    </body>
+</html>

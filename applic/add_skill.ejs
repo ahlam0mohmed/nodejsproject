@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./include/header.ejs') %>
+   
+    <body>
+        <h1 class="col-9">Skills</h1>
+        <div class="row m-5">
+            
+            <div >
+                <h5>skill</h5><input type="text" name="kname" >
+            </div>
+            <div class="col-6 row">
+                
+                <form class="mt-3 col-5"  action="/add_new/skill" method="post" enctype="multipart/form-data">
+                    <div class="">
+                        <input  type="submit" value="Add">
+                    </div>
+                </form>
+                <form class="mt-3 col-5" action="/add_soic" method="post"  enctype="multipart/form-data">  
+                    <input   type="submit" value="save">     
+                </form>
+                
+            </div>
+
+            <!---->
+        </div>
+        
+        <%- include('./include/footer.ejs') %>
+    </body>
+</html>

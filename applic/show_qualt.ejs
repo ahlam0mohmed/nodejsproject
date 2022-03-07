@@ -1,0 +1,14 @@
+
+
+ <div>
+    <% for( let inde=0; inde < qul.length; inde++ ) { %>
+        <div>
+            <label>brihday:</label><%= qul[inde].name %><br>
+            <label>Gender:</label><%= qul[inde].date %><br>
+            <label>E_mail:</label><%= qul[inde].avreg %> <br>
+            <label>phone:</label><%= qul[inde].place %><br>
+            <label> Id_Card image:</label><input type="button" class="bg-primary text-dark"
+                value="uplode  image" onclick="window.location.href='/image/<%= qul[inde].image %>'"><br>
+        </div>
+    <% } %>
+</div>

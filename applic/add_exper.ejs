@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./include/header.ejs') %>
+   
+    <body>
+        <h1>Expertise</h1>
+        <form class="m-5 p-5" action="/add_skill" method="post"  enctype="multipart/form-data">
+            <div class="col-4">
+                <h5>Expert:</h5><input type="text" name="exname" ><br>
+                <h5>num_year:</h5><input type="text" name="exyear" ><br>
+                <h5>place:</h5><input type="text" name="explace" ><br>
+            </div>
+            <input style="float: center;"  class="mt-3" type="submit" value="save">
+        </form>
+        
+    <%- include('./include/footer.ejs') %>
+
+    </body>
+</html>

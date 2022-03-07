@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./include/header.ejs') %>
+   
+
+
+    <body>
+        <form class="m-5 p-5" action="/add_qulet" method="post"  enctype="multipart/form-data">
+            <div class="  row">
+                <h1>Personal Information</h1>
+                <div class="col-6">
+                    <h5> name:</h5><input type="text" name="name"><br>
+                    <h5>brihday:</h5><input type="date" name="date"><br>
+                    <h5>Gender:</h5><input type="text" name="gen"><br>
+                    <h5>Address:</h5><input type="text" name="addr"><br>
+                    <h5>phone:</h5><input type="text" name="phon"><br>
+                </div>
+                <div class="col-6">
+                    <h5>E_mail:</h5><input type="email" name="email"><br>
+                    <h5>Id_Card number:</h5><input type="text" name="id_cardnum"><br>
+                    <h5>image:</h5><input type="file" name="imge" multipart><br>
+                    <h5> Id_Card image:</h5><input type="file" name="cardimg" multipart><br>
+                    <h5>CV:</h5><input type="file" name="cv" multipart><br>
+                </div>
+            </div>
+            <input  type="submit" value="save">
+
+        </form>
+    </body>
+</html>

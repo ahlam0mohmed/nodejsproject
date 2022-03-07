@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./include/header.ejs') %>
+
+    <style>
+       
+        label{
+            color: red;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    </style>
+<body>
+ <!--<div class=" m-5 p-3">
+       <% for( let index = 0; index < per.length; index++ ) { %> 
+            <div class="border m-5 p-3">
+                <div class="row p-3">
+                    <h1 class="col-9">Personal Informatino</h1>
+                    <input class="col-2" type="submit" value="edit"> 
+                </div>
+                
+                <div class="row border-top p-3">
+                    <div class="col-3">
+                        <img src="/image/<%= per[index].image %>" alt="personal image" width="200" height="200">
+                        <label> name:</label><%= per[index].name %><br>
+                    </div>
+                    <div class="col-4">
+                         
+                        <label>brihday:</label><%= per[index].birthday %><br>
+                        <label>Gender:</label><%= per[index].gender %><br>
+                        <label>E_mail:</label><%= per[index].E_mail %> <br>
+                        <label>phone:</label><%= per[index].phone %><br>
+                    </div>
+        
+                    <div class="col-4">
+                        <label>Address:</label><%= per[index].address %><br>
+                        <label>Id_Card num:</label><%= per[index].id_cardnum %><br> 
+                        <label> Id_Card image:</label><input type="button" class="bg-primary text-dark" value="uplode Id card image"
+                        onclick="window.location.href='/image/<%= per[index].id_cardimg %>'"><br> 
+                        <label>CV:</label><input type="button" class="bg-primary text-dark" value="uplode CV"
+                        onclick="window.location.href='/pdf/<%= per[index].cv %>'"><br> 
+                        
+                    </div>
+                    
+                </div>
+            </div> <!--end div information persnol-->
+            <% } %> 
+
+        </div>
+    
+        <div>
+            <% for( let inde=0; inde < qul.length; inde++ ) { %>
+                <div>
+                    <label>brihday:</label><%= qul[inde].name %><br>
+                    <label>Gender:</label><%= qul[inde].date %><br>
+                    <label>E_mail:</label><%= qul[inde].avreg %> <br>
+                    <label>phone:</label><%= qul[inde].place %><br>
+                    <label> Id_Card image:</label><input type="button" class="bg-primary text-dark"
+                        value="uplode  image" onclick="window.location.href='/image/<%= qul[inde].image %>'"><br>
+                </div>
+            <% } %>
+        </div>-->
+   
+    <div>
+        <% for( let index = 0; index < k.length; index++ ) { %>
+            <h6><%=index +1%>. <%= k[index].name  %> </h6>
+        <% } %>
+    </div>
+       
+    
+    
+
+    <div>
+        <h1>Skills</h1>
+        <div >
+            
+
+        </div>
+    </div>
+    
+    <%- include('./include/footer.ejs') %>
+
+</body>
+</html>
+        <!--<form action="/edit" method="post"></form>-->
